@@ -4,7 +4,9 @@
 <head>
 
     <title>Trello</title>
-
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+		<script src="js/modernizr.custom.js"></script>
     <script>
     !function(e,t){var s=e.createElement("link");s.href=t,s.rel="stylesheet",s.type="text/css",e.getElementsByTagName("head")[0].appendChild(s)}(document,"https://d78fikflryjgj.cloudfront.net/css/c8c65ef0cdeae91ec5960a2924bd823e/images.css");
     </script>
@@ -19,146 +21,7 @@
 
 <body class="chrome chrome-47 mac body-webkit-scrollbars color-blind-mode-enabled tabbed-page">
 
-    <div id="boards-drawer">
-        <div class="boards-drawer">
-            <div class="boards-drawer-header">
-                <h3>Boards</h3>
-            </div>
-            <div class="board-drawer-content u-fancy-scrollbar" style=
-            "max-height: 1214px;">
-                <input class="js-search-boards" placeholder=
-                "Find boards by name…" type="text">
-                <div class="js-board-drawer-boards">
-                    <div>
-                        <p class="quiet u-text-align-center hide" style=
-                        "margin: 6px 4px 0 0; padding: 8px 12px;">No Boards</p>
-                        <div class=
-                        "starred-sidebar-boards-list js-starred-boards">
-                            <div class="hide">
-                                <div class=
-                                "sidebar-section-header quiet js-sidebar-section-header bold">
-                                <span class=
-                                "icon-sm icon-star sidebar-section-header-icon">
-                                    </span><span class=
-                                    "sidebar-section-header-title">Starred
-                                    Boards</span><span class=
-                                    "icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span>
-                                </div>
-                                <ul class=
-                                "sidebar-boards-list js-board-list ui-sortable">
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="js-recent-boards">
-                            <div>
-                                <div class=
-                                "sidebar-section-header quiet js-sidebar-section-header bold">
-                                <span class=
-                                "icon-sm icon-clock sidebar-section-header-icon">
-                                    </span><span class=
-                                    "sidebar-section-header-title">Recent
-                                    Boards</span><span class=
-                                    "icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span>
-                                </div>
-                                <ul class="sidebar-boards-list js-board-list">
-                                    <li class="compact-board-tile">
-                                        <div class=
-                                        "compact-board-tile-wrapper">
-                                            <span class=
-                                            "compact-board-tile-background"
-                                            style=
-                                            "background-color: #0079BF;"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link dark"
-                                            href=
-                                            "https://trello.com/b/Qx5tuEiz/a-board-that-i-made"><span class="compact-board-tile-link-thumbnail"
-                                            style=
-                                            "background-color: #0079BF;"></span><span class="compact-board-tile-link-text details"><span class="compact-board-tile-link-text-name"
-                                            title="A board that I made">A board
-                                            that I
-                                            made</span></span><span class=
-                                            "compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread"
-                                            title=
-                                            "There is new activity on this board."></span><span class="icon-sm icon-close js-remove-board compact-board-tile-link-options-remove"></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board"
-                                            title=
-                                            "Click to star this board. It will show up at top of your boards list."></span></span></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="js-all-boards">
-                            <div>
-                                <div class=
-                                "sidebar-section-header quiet js-sidebar-section-header bold">
-                                <span class=
-                                "icon-sm icon-board sidebar-section-header-icon">
-                                    </span><span class=
-                                    "sidebar-section-header-title">My
-                                    Boards</span><span class=
-                                    "icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span>
-                                </div>
-                                <ul class="sidebar-boards-list js-board-list">
-                                    <li class="compact-board-tile">
-                                        <div class=
-                                        "compact-board-tile-wrapper">
-                                            <span class=
-                                            "compact-board-tile-background"
-                                            style=
-                                            "background-color: #0079BF;"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link dark"
-                                            href=
-                                            "https://trello.com/b/Qx5tuEiz/a-board-that-i-made"><span class="compact-board-tile-link-thumbnail"
-                                            style=
-                                            "background-color: #0079BF;"></span><span class="compact-board-tile-link-text details"><span class="compact-board-tile-link-text-name"
-                                            title="A board that I made">A board
-                                            that I
-                                            made</span></span><span class=
-                                            "compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread"
-                                            title=
-                                            "There is new activity on this board."></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board"
-                                            title=
-                                            "Click to star this board. It will show up at top of your boards list."></span></span></a>
-                                        </div>
-                                    </li>
-                                    <li class="compact-board-tile">
-                                        <div class=
-                                        "compact-board-tile-wrapper">
-                                            <span class=
-                                            "compact-board-tile-background"
-                                            style=
-                                            "background-color: #0079BF;"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link dark"
-                                            href=
-                                            "https://trello.com/b/D6UIs0tX/welcome-board"><span class="compact-board-tile-link-thumbnail"
-                                            style=
-                                            "background-color: #0079BF;"></span><span class="compact-board-tile-link-text details"><span class="compact-board-tile-link-text-name"
-                                            title="Welcome Board">Welcome
-                                            Board</span></span><span class=
-                                            "compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread"
-                                            title=
-                                            "There is new activity on this board."></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board"
-                                            title=
-                                            "Click to star this board. It will show up at top of your boards list."></span></span></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="js-board-drawer-buttons">
-                    <div>
-                        <a class="quiet-button js-add-board" href=
-                        "https://trello.com/#">Create new board…</a><a class=
-                        "quiet-button js-pin" href=
-                        "https://trello.com/#">Always keep this menu
-                        open.</a><a class="quiet-button hide js-unpin" href=
-                        "https://trello.com/#">Don’t keep this menu
-                        open.</a><a class="quiet-button js-open-closed-boards"
-                        href="https://trello.com/#">See closed boards…</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p id="notification" style="display: none;"></p>
+
     <div id="surface">
         <div id="header">
             <a aria-label="Trello Home" class="header-logo js-home-via-logo"
@@ -183,13 +46,6 @@
                     "header-search-icon icon-lg icon-search light js-search-icon js-search-focus"></span><span class="header-search-icon header-search-icon-close icon-lg icon-close light hide js-close-icon js-search-close"></span><a class="header-search-icon header-search-icon-open icon-lg icon-external-link light hide js-open-button js-open-search-page"
                     href="https://trello.com/#"></a>
                 </div>
-            </div>
-            <div>
-                <a class="header-btn header-woof woof-hide" href=
-                "https://trello.com/#"><span class=
-                "taco-talk-small-icon"></span><span class=
-                "header-btn-text"><span class="left-arrow"></span><span class=
-                "js-phrase">New stuff!</span></span></a>
             </div>
             <div class="header-user">
                 <a aria-label="Create Board or Organization" class=
@@ -216,16 +72,6 @@
         <div id="content">
             <div class="member-boards-view">
                 <div></div>
-                <div class="boards-page-board-section hide">
-                    <div class="boards-page-board-section-header">
-                        <div class="boards-page-board-section-header-icon">
-                            <span class="icon-lg icon-star"></span>
-                        </div>
-                        <h3 class="boards-page-board-section-header-name">
-                        Starred Boards</h3>
-                    </div>
-                    <ul class="board-list js-board-list ui-sortable"></ul>
-                </div>
                 <div class="boards-page-board-section">
                     <div class="boards-page-board-section-header">
                         <div class="boards-page-board-section-header-icon">
@@ -242,13 +88,28 @@
                             style="background-color: #0079BF;"><span class=
                             "fade"></span><span class="details"><span class=
                             "board-list-item-name" title=
-                            "Welcome Board">Welcome
-                            Board</span></span><span class=
+                            "Welcome Board">Welcome Board</span></span><span class=
                             "options"><span class="unread-indicator js-unread"
                             title=
                             "There is new activity on this board."></span><span class="icon-sm icon-star board-list-item-icon-star js-star-board"
                             title=
                             "Click to star this board. It will show up at top of your boards list."></span></span></a>
+
+
+							<div class="morph-button morph-button-overlay morph-button-fixed">
+								<button type="button">Welcome</button>
+								<div class="morph-content">
+									<div>
+										<div class="content-style-overlay">
+											<span class="icon icon-close">Close the overlay</span>
+											<h2>About Parsley</h2>
+											<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- morph-button -->
+
+
                         </li>
                         <li>
                             <a class="board-list-item--add-board js-add-board"
@@ -272,6 +133,78 @@
     <div class="pop-over"></div>
     <div class="tooltip-container"></div>
     <div id="clipboard-container"></div>
+
+
+    	<script src="js/classie.js"></script>
+		<script src="js/uiMorphingButton_fixed.js"></script>
+		<script>
+			(function() {	
+				var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+				// trick to prevent scrolling when opening/closing button
+				function noScrollFn() {
+					window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+				}
+
+				function noScroll() {
+					window.removeEventListener( 'scroll', scrollHandler );
+					window.addEventListener( 'scroll', noScrollFn );
+				}
+
+				function scrollFn() {
+					window.addEventListener( 'scroll', scrollHandler );
+				}
+
+				function canScroll() {
+					window.removeEventListener( 'scroll', noScrollFn );
+					scrollFn();
+				}
+
+				function scrollHandler() {
+					if( !didScroll ) {
+						didScroll = true;
+						setTimeout( function() { scrollPage(); }, 60 );
+					}
+				};
+
+				function scrollPage() {
+					scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+					didScroll = false;
+				};
+
+				scrollFn();
+				
+				var el = document.querySelector( '.morph-button' );
+				
+				new UIMorphingButton( el, {
+					closeEl : '.icon-close',
+					onBeforeOpen : function() {
+						// don't allow to scroll
+						noScroll();
+					},
+					onAfterOpen : function() {
+						// can scroll again
+						canScroll();
+						// add class "noscroll" to body
+						classie.addClass( document.body, 'noscroll' );
+						// add scroll class to main el
+						classie.addClass( el, 'scroll' );
+					},
+					onBeforeClose : function() {
+						// remove class "noscroll" to body
+						classie.removeClass( document.body, 'noscroll' );
+						// remove scroll class from main el
+						classie.removeClass( el, 'scroll' );
+						// don't allow to scroll
+						noScroll();
+					},
+					onAfterClose : function() {
+						// can scroll again
+						canScroll();
+					}
+				} );
+			})();
+		</script>
 
 </body>
 </html>
