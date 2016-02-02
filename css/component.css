@@ -108,7 +108,7 @@
 
 .morph-button-overlay .morph-content {
 	overflow: hidden;
-	background: #e85657;
+	background: #fff;
 }
 
 .morph-button-overlay.open .morph-content {
@@ -494,5 +494,5 @@
 
 	.morph-button-sidebar.open .morph-content {
 		height: 100% !important;
-	}
+
 }
